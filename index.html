@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#121212',
+                        'dark-light': '#1E1E1E',
+                    },
+                    animation: {
+                        'slide-logos': 'slide-logos 30s linear infinite',
+                    },
+                    keyframes: {
+                        'slide-logos': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        header {
+            margin-bottom: 5rem;
+            /* Ajusta el espacio entre el header y la siguiente sección */
+        }
+        
+        
+    </style>
+</head>
+
+<body class="bg-dark text-white min-h-screen">
+    <div class="fixed h-full w-full bg-slate-950">
+        <div
+            class="fixed bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+        </div>
+    </div>
+    <!-- Header Section -->
+    <header class="container mx-auto py-32 text-center relative z-10">
+        <div class="relative mx-auto h-64 w-64 overflow-hidden rounded-full border-4 border-purple-300 hover:border-purple-900 mb-4">
+            <img src="assets/img-portfolio.png" alt="Profile" class="object-cover w-full h-full">
+        </div>
+        <div class="mt-8 flex justify-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="h-6 w-6 text-gray-300 hover:text-purple-900">
+                <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                <path d="M12 14a3 3 0 00-3 3v1a3 3 0 009 0v-1a3 3 0 00-3-3z" />
+            </svg>
+            <p class="text-center text-white">Bautista Tordini</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="h-6 w-6 text-gray-300 hover:text-purple-900">
+                <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z" />
+            </svg>
+            <p class="text-center text-white">Argentina</p>
+        </div>
+        <div class="mt-12 flex justify-center gap-6">
+            <a href="#" class="text-gray-300 hover:text-purple-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-purple-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-purple-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-purple-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-purple-900">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="h-6 w-6">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="button-container mt-32 flex justify-center">
+            <button 
+                onclick="smoothScroll('technologies-carousel')" 
+                class="cursor-pointer bg-gray-800 bg-opacity-70 px-8 py-4 rounded-md text-white tracking-wider shadow-xl hover:bg-gray-700 transition duration-300 ease-in-out transform hover:scale-105">
+                <span class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 13.5L12 21m0 0L4.5 13.5M12 21V3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    <span>Ver más</span>
+                </span>
+            </button>
+        </div>
+        
+        <script>
+            function smoothScroll(targetId) {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset; // Obtener la posición del elemento
+                    const startPosition = window.pageYOffset; // Posición actual del scroll
+                    const distance = targetPosition - startPosition; // Distancia a recorrer
+                    const duration = 1000; // Duración del desplazamiento en milisegundos
+                    let startTime = null; // Tiempo inicial
+            
+                    function animation(currentTime) {
+                        if (startTime === null) startTime = currentTime; // Inicializar el tiempo de inicio
+                        const timeElapsed = currentTime - startTime; // Calcular el tiempo transcurrido
+                        const progress = Math.min(timeElapsed / duration, 1); // Calcular el progreso
+                        const ease = easeInOutQuad(progress); // Función de easing
+                        window.scrollTo(0, startPosition + distance * ease); // Desplazamiento
+                        if (timeElapsed < duration) {
+                            requestAnimationFrame(animation); // Continuar la animación
+                        }
+                    }
+            
+                    function easeInOutQuad(t) {
+                        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // Easing cuadrático
+                    }
+            
+                    requestAnimationFrame(animation); // Iniciar la animación
+                }
+            }
+            </script>
+            
+        
+        
+
+    </header>
+
+    <!-- Technologies Carousel -->
+    <section id="technologies-carousel" class="relative w-full text-center flex flex-col justify-center items-center gap-5 px-4 py-12 sm:py-24 pointer-events-none">
+        <h2
+            class="w-full max-w-xl sm:text-center text-2xl sm:text-3xl md:text-4xl font-medium tracking-tighter text-pretty bg-clip-text text-white">
+            Las principales tecnologías <br>que uso
+        </h2>
+        <p
+            class="w-full max-w-xl text-gray-400 sm:text-center text-lg sm:text-xl md:text-xl font-light tracking-tighter text-balance">
+            Las mejores herramientas para obtener los mejores resultados.
+        </p>
+        <div class="w-full h-fit max-w-xl flex flex-col justify-center select-none overflow-hidden gradient">
+            <div class="w-max flex flex-nowrap gap-[4rem] animate-slide-logos">
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/python.svg" alt="Python Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/c++.svg" alt="C++ Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/html.svg" alt="HTML Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/css.svg" alt="CSS Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/tailwind.svg" alt="Tailwind CSS Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/bootstrap.svg" alt="Bootstrap Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/javascript.svg" alt="JavaScript Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/mysql.svg" alt="SQL Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/mongodb.svg" alt="MongoDB Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/firebase.svg" alt="Firebase Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/nodejs.svg" alt="Node.js Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <!-- Duplicate logos for seamless loop -->
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/python.svg" alt="Python Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/c++.svg" alt="C++ Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/html.svg" alt="HTML Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/css.svg" alt="CSS Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/tailwind.svg" alt="Tailwind CSS Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/bootstrap.svg" alt="Bootstrap Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/javascript.svg" alt="JavaScript Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/mysql.svg" alt="SQL Logo" loading="eager" class="object-contain" width="42"
+                        height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/mongodb.svg" alt="MongoDB Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/firebase.svg" alt="Firebase Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+                <div class="aspect-square flex items-center justify-center size-20">
+                    <img src="assets/svg/nodejs.svg" alt="Node.js Logo" loading="eager" class="object-contain"
+                        width="42" height="42" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section class="relative max-w-7xl mx-auto py-20 px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">My Portfolio</h2>
+        <div class="grid gap-12 md:grid-cols-2">
+            <!-- Project 1 -->
+            <div class="group relative overflow-hidden rounded-xl bg-dark-light transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                <div class="relative mx-auto h-[300px] w-full overflow-hidden">
+                    <img src="assets/img/project-1.png" alt="AI Task Manager preview"
+                        class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Nexus Marketing</h3>
+                    <p class="text-gray-400 mb-4">Agencia de Marketing orientada a la generacion de Leads</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">HTML</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">CSS</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">JavaScript</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Hosting Management</span>
+                    </div>
+                    
+                    <a href="https://nexusmarketing.netlify.app/error-checkout.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group relative overflow-hidden rounded-xl bg-dark-light transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                <div class="relative mx-auto h-[300px] w-full overflow-hidden">
+                    <img src="assets/img/project-2.png" alt="E-commerce Platform preview"
+                        class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-white">uVoy - Busca y Ofrece viajes</h3>
+                    <p class="text-gray-400 mb-4">uVoy es una plataforma web que te ayuda a encontrar u ofrecer viajes. 
+                        Ahorra dinero y haz nuevos amigos en el camino.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">HTML</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">CSS</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">JavaScript</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Firebase</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Tailwind CSS</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group relative overflow-hidden rounded-xl bg-dark-light transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                <div class="relative mx-auto mt-4 h-[300px] w-full overflow-hidden">
+                    <img src="assets/img/project-3.png" alt="IoT Dashboard preview"
+                        class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-white">IBO Chat</h3>
+                    <p class="text-gray-400 mb-4">IBO Chat es una inteligencia artificial conectada con Whatsapp, 
+                        con él podrás mejorar la gestión de ventas, soporte y otros aspectos clave que impiden a las empresas alcanzar resultados óptimos</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Node.js</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">API IA / Meta</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">HTML</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">CSS</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Tailwind CSS</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Railway</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Docker</span>
+                    </div>
+                    <a href="https://ibochat.netlify.app" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="group relative overflow-hidden rounded-xl bg-dark-light transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                <div class="relative mx-auto mt-4 h-[300px] w-full overflow-hidden">
+                    <img src="/api/placeholder/800/600" alt="AR Educational App preview"
+                        class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Augmented Reality Educational App</h3>
+                    <p class="text-gray-400 mb-4">An innovative educational application that uses augmented reality to
+                        bring learning materials to life, enhancing engagement and comprehension for students.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Unity</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">ARKit</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">C#</span>
+                        <span class="bg-purple-900 text-purple-100 px-3 py-1 rounded-full text-sm font-semibold">Machine Learning</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div class="mt-16 text-center">
+            <a href="#" class="inline-flex items-center gap-2 rounded-full bg-purple-600 px-6 py-3 font-semibold text-white hover:bg-purple-700 transition-colors">
+                View All Projects
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
